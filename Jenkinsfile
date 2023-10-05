@@ -6,11 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('yarn') {
+    stage('build') {
       steps {
-        sh 'ls'
-        yarn 'yarn'
-        sh 'exit'
+        sh 'yarn -v'
       }
     }
 
