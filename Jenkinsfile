@@ -1,10 +1,11 @@
 pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'npm --version'
-            }
-        }
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'npm --version'
+      }
     }
+
+  }
 }
