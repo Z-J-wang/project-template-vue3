@@ -8,7 +8,9 @@ pipeline {
   stages {
     stage('yarn') {
       steps {
-        sh 'yarn'
+        sh 'ls'
+        yarn 'yarn'
+        sh 'exit'
       }
     }
 
