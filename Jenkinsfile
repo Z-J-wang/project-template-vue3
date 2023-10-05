@@ -1,16 +1,20 @@
-pipeline {
-  agent {
-    node {
-      label 'Node'
+pipeline{
+    agent any
+    stages{
+        stage("first"){
+            steps {
+                echo 'hello world'
+            }
+        }
+        stage("run test"){
+            steps {
+                echo 'run test'
+            }
+        }
     }
-
-  }
-  stages {
-    stage('Build') {
-      steps {
-        sh 'npm --version'
-      }
+    post{
+        always{
+            echo 'always say goodbay'
+        }
     }
-
-  }
 }
