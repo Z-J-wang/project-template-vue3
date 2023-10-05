@@ -1,9 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'Node'
+    }
+
+  }
   stages {
     stage('first') {
       steps {
         echo 'hello world'
+        sh 'git pull'
       }
     }
 
