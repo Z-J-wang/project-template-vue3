@@ -1,16 +1,10 @@
 pipeline {
-  agent {
-    node {
-      label 'build'
+    agent { docker 'node:6.3' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm --version'
+            }
+        }
     }
-
-  }
-  stages {
-    stage('Build') {
-      steps {
-        sh 'yarn -v'
-      }
-    }
-
-  }
 }
