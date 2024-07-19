@@ -10,5 +10,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  // devServer 配置
+  server: {
+    open: true, // 自动打开浏览器
+    proxy: {} // 代理
   }
 })
