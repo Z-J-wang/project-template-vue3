@@ -9,7 +9,7 @@
   "editor.formatOnType": true,
   "editor.unicodeHighlight.includeComments": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   "stylelint.enable": true,
   "stylelint.packageManager": "yarn",
