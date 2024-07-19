@@ -11,6 +11,45 @@
 - 调整`.prettierrc.json`内的配置；
 - 调整单元测试文件目录路径，迁移至`src/tests/`；
 - 引入 tailwind 插件；
+- 引入三层架构设计思路，调整项目目录结构；
+
+## Project Structure
+
+```
+├── .github ------------------------------ GitHub Actions 配置文件
+│   └── workflows
+├── .vscode ------------------------------ vscode 配置文件
+│   └── .editorconfig
+│   └── extensions.json
+│   └── settings.json
+├── api ---------------------------------- 项目HTTP API
+├── bll ---------------------------------- 业务逻辑层（根据业务调用数据访问层的接口）
+├── dal ---------------------------------- 数据访问层（调用HTTP API请求数据，并根据对应实体组装接口返回的数据）
+├── entities ----------------------------- 实体层（定义数据访问层所需的数据实体）
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── router
+│   ├── store
+│   ├── styles
+│   ├── utils
+│   ├── views
+│   ├── App.vue
+│   └── main.ts
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc.json
+├── .stylelintrc.json
+├── env.d.ts
+├── index.html
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+```
 
 ## Customize configuration
 
