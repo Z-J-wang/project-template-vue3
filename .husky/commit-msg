@@ -1,0 +1,1 @@
+node .husky/script/commit-message-check.js $1
