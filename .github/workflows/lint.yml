@@ -4,6 +4,10 @@ on:
   push:
   workflow_dispatch:
 
+# gitHub Actions 禁用 Husky
+env:
+  HUSKY: 0
+
 jobs:
   lint:
     runs-on: ubuntu-latest
