@@ -53,5 +53,14 @@
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "cSpell.words": [],
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, env.d.ts",
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, eslint*, .prettier*, prettier*, .editorconfig, commitlint.config.*, .stylelintrc.*, .stylelintignore, postcss.config.*"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

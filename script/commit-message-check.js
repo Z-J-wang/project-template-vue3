@@ -3,7 +3,8 @@
 const msgPath = process.argv[2]
 const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
 
-const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,50}/
+const commitRE =
+  /(^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,50})|Merge branch/
 
 if (!commitRE.test(msg)) {
   console.error(`
