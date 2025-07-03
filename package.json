@@ -12,8 +12,8 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "yarn lint:eslint && yarn lint:stylelint",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:stylelint --fix",
-    "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .eslintignore",
-    "lint:stylelint": "stylelint --config .stylelintrc.js --ignore-path .stylelintignore src/**/*.{html,vue,css,sass,scss,less}",
+    "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+    "lint:stylelint": "stylelint \"{src,test}/**/*.{vue,css,less,html,xml}\"",
     "prepare": "husky"
   },
   "dependencies": {
