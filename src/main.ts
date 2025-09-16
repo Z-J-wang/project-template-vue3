@@ -1,6 +1,4 @@
-import './css/main.css'
-import '@/css/common.less'
-
+import './css/index.less'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
